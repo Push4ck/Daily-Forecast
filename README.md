@@ -1,12 +1,10 @@
 # Daily-Forecast
 
-![Sample Image](assets/images/clear.png)
-
 Unleash the Weather Wizard in You with Daily-Forecast! ☀️🌦️🌧️
 
 ## Navigate the Weather Realm 🌍
 
-Welcome to **Daily-Forecast**, where weather data becomes your tool to conquer the ever-changing elements of Mother Nature. Whether you're a weather enthusiast seeking forecasts or a traveler planning your next adventure, this web application has the meteorological insights you need. Built with HTML, CSS, and JavaScript, and powered by the OpenWeatherMap API, Daily-Forecast is your key to staying weather-wise.
+Welcome to **Daily-Forecast**, where weather data becomes your tool to conquer the ever-changing elements of Mother Nature. Whether you're a weather enthusiast seeking forecasts or a traveller planning your next adventure, this web application has the necessary meteorological insights. Built with HTML, CSS, and JavaScript, and powered by the OpenWeatherMap API, Daily-Forecast is your key to staying weather-wise.
 
 ## Weather at Your Fingertips 🌤️
 
@@ -14,7 +12,7 @@ Welcome to **Daily-Forecast**, where weather data becomes your tool to conquer t
    Get real-time weather data for any location, including temperature, humidity, wind speed, and more.
 
 2. **Hourly Forecasts** ⏳
-   Plan your day with a detailed hourly weather forecast for the next 24 hours.
+   You can plan your day with a detailed hourly weather forecast for the next 24 hours.
 
 3. **Extended Outlook** 📆
    Look ahead with a 7-day weather forecast, perfect for trip planning and event scheduling.
@@ -52,4 +50,4 @@ Empower yourself, stay ahead of the elements, and navigate the world with meteor
 
 ---
 
-*Note: Daily-Forecast is a web application designed for weather enthusiasts and travelers. The intention is to provide accurate weather information and encourage responsible use of weather data for planning and safety.*
+*Note: Daily-Forecast is a web application designed for weather enthusiasts and travellers. The intention is to provide accurate weather information and encourage responsible use of weather data for planning and safety.*
