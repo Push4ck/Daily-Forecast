@@ -1,5 +1,7 @@
 # Daily-Forecast
 
+![Sample Image](assets/images/clear.png)
+
 Unleash the Weather Wizard in You with Daily-Forecast! ☀️🌦️🌧️
 
 ## Navigate the Weather Realm 🌍
