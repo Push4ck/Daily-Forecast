@@ -1,76 +1,122 @@
-*{
+/* Google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+/* Root level CSS variables for colors, font weights, etc. */
+:root {
+    /* Hue */
+    --hue-color: 10;
+
+    /* HSL color mode */
+    --body-color: hsl(var(--hue-color), 60%, 70%);
+    --card-background-color: hsl(var(--hue-color), 57%, 53%);
+    
+    /* Normal-color */
+    --card-color: #fff;
+    --text-color: #000;
+    
+    /* Font-weights */
+    --light: 200;
+    --normal: 400;
+    --heavy: 600;
+    
+    /* Font-sizes */
+    --text-size: 20px;
+    --display-text-size: 80px;
+    --display-info-size: 30px;
+    --display-info-size-light: 15px;
+}
+
+/* Resetting default styles for all elements */
+*, *:after, *:before {
     margin: 0;
     padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    text-decoration: none;
+}
+
+/* Applying 'Poppins' font to all elements within the body */
+body * {
     font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
 }
 
+/* Styling for the body element */
 body {
-    background-color: #505285;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--body-color);
 }
 
-.card{
+/* Style for the main weather card */
+.card {
     width: 90%;
     max-width: 470px;
-    background: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);
-    color: #fff;
+    background: var(--card-background-color);
+    color: var(--card-color);
     margin: 100px auto 0;
     border-radius: 20px;
     padding: 40px 35px;
     text-align: center;
 }
 
-.search{
+/* Style for the search bar */
+.search {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.search input{
+.search input, .search button {
     border: 0;
     outline: 0;
-    background: #ebfffc;
-    color: #555;
+    background: var(--card-color);
+    color: var(--text-color);
+}
+
+.search input {
     padding: 10px 25px;
     height: 60px;
     border-radius: 30px;
     flex: 1;
     margin-right: 16px;
-    font-size: 18px;
+    font-size: var(--text-size);
 }
 
-.search button{
-    border: 0;
-    outline: 0;
-    background: #ebfffc;
+.search button {
     border-radius: 50%;
     width: 60px;
     height: 60px;
     cursor: pointer;
 }
 
-.search button img{
+.search button img {
     width: 16px;
 }
 
-.weather-icon{
+/* Style for the weather icon */
+.weather-icon {
     width: 170px;
     margin-top: 30px;
 }
 
-.weather h1{
-    font-size: 80px;
-    font-weight: 500;
+/* Styles for temperature and city name */
+.weather h1 {
+    font-size: var(--display-text-size);
+    font-weight: var(--heavy);
 }
 
-.weather h2{
+.weather h2 {
     font-size: 45px;
-    font-weight: 400;
+    font-weight: var(--normal);
     margin-top: -10px;
 }
 
-.details{
+/* Styles for additional weather details */
+.details {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -78,30 +124,33 @@ body {
     margin-top: 50px;
 }
 
-.col{
+.col {
     display: flex;
     align-items: center;
     text-align: left;
 }
 
-.col img{
+.col img {
     width: 50px;
     margin-right: 10px;
 }
 
-.humidity, .wind{
-    font-size: 28px;
+/* Styles for humidity and wind information */
+.humidity, .wind {
+    font-size: var(--display-info-size);
     margin-top: -6px;
 }
 
-.weather{
+/* Initially hide the weather display */
+.weather {
     display: none;
 }
 
-.error{
+/* Styles for displaying error messages */
+.error {
     display: none;
     text-align: left;
     margin-left: 10px;
-    font-size: 14px;
+    font-size: var(--display-info-size-light);
     margin-top: 10px;
 }
