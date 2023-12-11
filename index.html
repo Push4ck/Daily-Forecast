@@ -4,23 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather</title>
+    <!-- Link to the external stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Favicon for the website -->
     <link rel="icon" href="assets/images/clear.png" sizes="32x32" type="image/png">
 </head>
 <body>
+    <!-- Main container for the weather card -->
     <div class="card">
+        <!-- Search bar for entering city name -->
         <div class="search">
             <input type="text" placeholder="enter city name" spellcheck="false">
             <button><img src="assets/images/search.png" alt=""></button>
         </div>
+        <!-- Display error message for invalid city name -->
         <div class="error">
             <p>Invalid city name</p>
         </div>
+        <!-- Weather information display section -->
         <div class="weather">
+            <!-- Weather icon image -->
             <img src="assets/images/rain.png" alt="" class="weather-icon">
+            <!-- Temperature display -->
             <h1 class="temp">22°C</h1>
+            <!-- City name display -->
             <h2 class="city">New York</h2>
+            <!-- Additional weather details -->
             <div class="details">
+                <!-- Humidity information -->
                 <div class="col">
                     <img src="assets/images/humidity.png" alt="">
                     <div>
@@ -28,6 +39,7 @@
                         <p>Humidity</p>
                     </div>
                 </div>
+                <!-- Wind speed information -->
                 <div class="col">
                     <img src="assets/images/wind.png" alt="">
                     <div>
@@ -39,7 +51,7 @@
         </div>
     </div>
 
-    <script src="assets/js/main.js"></script>
-
+    <!-- JavaScript script reference -->
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
