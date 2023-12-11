@@ -9,26 +9,22 @@ const weatherDisplay = document.querySelector(".weather");
 
 // Function to get the user's location and call checkWeather
 async function getWeatherByUserLocation() {
-    if (navigator.geolocation) {
-        try {
-            const position = await new Promise((resolve, reject) => {
-                navigator.geolocation.getCurrentPosition(resolve, reject);
-            });
+    try {
+        const position = await new Promise((resolve, reject) => {
+            navigator.geolocation.getCurrentPosition(resolve, reject);
+        });
 
-            const { latitude, longitude } = position.coords;
-            const userLocationResponse = await fetch(`${apiUrl}&lat=${latitude}&lon=${longitude}&appid=${apiKey}`);
-            const userLocationData = await userLocationResponse.json();
+        const { latitude, longitude } = position.coords;
+        const userLocationResponse = await fetch(`${apiUrl}&lat=${latitude}&lon=${longitude}&appid=${apiKey}`);
+        const userLocationData = await userLocationResponse.json();
 
-            if (userLocationResponse.status === 200) {
-                checkWeather(userLocationData.name);
-            } else {
-                displayError("Unable to fetch user's location weather");
-            }
-        } catch (error) {
-            displayError("Geolocation permission denied or not supported by your browser");
+        if (userLocationResponse.status === 200) {
+            checkWeather(userLocationData.name);
+        } else {
+            displayError("Unable to fetch user's location weather");
         }
-    } else {
-        displayError("Geolocation is not supported by your browser");
+    } catch (error) {
+        displayError("Geolocation permission denied or not supported by your browser");
     }
 }
 
