@@ -52,7 +52,7 @@ body {
 
 /* Style for the main weather card */
 .card {
-    width: 90%;
+    width: 100%;
     max-width: 470px;
     background: var(--card-background-color);
     color: var(--card-color);
